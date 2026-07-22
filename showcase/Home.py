@@ -16,8 +16,8 @@ st.set_page_config(page_title="나의 딥러닝 모델 랩", page_icon="🧪", l
 apply_theme()
 hero(PROFILE["title"], PROFILE["subtitle"], PROFILE["name"])
 
-classification_model = PROJECT_ROOT / "과제_Streamlit_앱_분류/mnist_cnn.pt"
-regression_model = PROJECT_ROOT / "과제_Streamlit_앱_회귀/bike_reg.pt"
+classification_model = PROJECT_ROOT / "mnist_cnn.pt"
+regression_model = PROJECT_ROOT / "bike_reg.pt"
 ready_count = sum(path.exists() for path in [classification_model, regression_model])
 
 st.markdown("### 프로젝트 현황")
